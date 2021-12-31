@@ -7,7 +7,6 @@ import SideBar from "./components/SideBar";
 
 function App() {
   const [currentMonth, setCurrentMonth] = useState(getMonth());
-  console.log(getMonth(4));
   return (
     <div className="flex flex-col">
       <div>

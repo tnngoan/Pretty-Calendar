@@ -8,7 +8,7 @@ function Day({ day, rowNumber }) {
       : "";
   }
   return (
-      <div className="flex flex-col border-2">
+      <div className="flex flex-col border-1">
         <div className="flex flex-col items-center">
           {rowNumber === 0 && <p>{day.format("ddd").toUpperCase()}</p>}
           <p className={`text-sm p-1 my-1 text-center ${daySelected()}`}>
