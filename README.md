@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# Pretty Calendar with React inspired from Google Calendar
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Library used in project:
+
+* `day.js`
+
+* 
 
 ## Available Scripts
 
