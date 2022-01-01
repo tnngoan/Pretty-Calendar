@@ -1,19 +1,46 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronRight,
   faChevronLeft,
   faChevronDown,
 } from "@fortawesome/free-solid-svg-icons";
+import GlobalContext from "../context/GlobalContext";
+import dayjs from "dayjs";
 
 function NavigationBar() {
+  const { monthNumber, setMonthNumber } = useContext(GlobalContext);
+  function prevMonth() {
+    setMonthNumber(monthNumber - 1);
+  }
+  function nextMonth() {
+    setMonthNumber(monthNumber + 1);
+  }
+  function getToday() {
+    setMonthNumber(dayjs().month());
+  }
   return (
     <div className="flex justify-between items-center h-20 px-12">
       <div className="flex justify-around flex-shrink items-center text-blue-800">
-        <button className="px-4">Today</button>
-        <FontAwesomeIcon icon={faChevronLeft} className="px-4" />
-        <FontAwesomeIcon icon={faChevronRight} className="px-4" />
-        <p className="px-4 font-semibold">Jan 2022</p>
+        <button
+          className="px-4 border-1 border-blue-700 rounded-xl"
+          onClick={getToday}
+        >
+          Today
+        </button>
+        <FontAwesomeIcon
+          icon={faChevronLeft}
+          className="px-4 cursor-pointer"
+          onClick={prevMonth}
+        />
+        <FontAwesomeIcon
+          icon={faChevronRight}
+          className="px-4 cursor-pointer"
+          onClick={nextMonth}
+        />
+        <h2 className="px-4 font-semibold">
+          {dayjs(new Date(dayjs().year(), monthNumber)).format("MMMM YYYY")}
+        </h2>
       </div>
       <div>
         <button className="bg-blue-700 p-2 px-4 rounded-xl text-gray-100">
