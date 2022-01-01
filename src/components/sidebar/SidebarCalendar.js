@@ -25,7 +25,7 @@ export default function SidebarCalendar() {
   function prevMonth() {
     setCurrentMonthNumber(currentMonthNumber - 1);
   }
-  
+
   function nextMonth() {
     setCurrentMonthNumber(currentMonthNumber + 1);
   }
@@ -39,27 +39,27 @@ export default function SidebarCalendar() {
       : "";
   }
   return (
-    <div className="">
-      <header className="flex">
-        <p className="">
-          {dayjs(new Date(dayjs().year(), currentMonthNumber)).format(
-            "MMMM YYYY"
-          )}
-        </p>
+    <div className="w-72 p-6">
+      <header className="flex justify-between items-center pt-3">
+        <FontAwesomeIcon
+          icon={faChevronLeft}
+          className="px-4 cursor-pointer"
+          onClick={prevMonth}
+        />
         <div>
-          <FontAwesomeIcon
-            icon={faChevronLeft}
-            className="px-4 cursor-pointer"
-            onClick={prevMonth}
-          />
-          <FontAwesomeIcon
-            icon={faChevronRight}
-            className="px-4 cursor-pointer"
-            onClick={nextMonth}
-          />
+          <p className="">
+            {dayjs(new Date(dayjs().year(), currentMonthNumber)).format(
+              "MMMM YYYY"
+            )}
+          </p>
         </div>
+        <FontAwesomeIcon
+          icon={faChevronRight}
+          className="px-4 cursor-pointer"
+          onClick={nextMonth}
+        />
       </header>
-      <div className="grid grid-cols-7 grid-rows-6">
+      <div className="grid grid-cols-7 grid-rows-6 py-4">
         {currentMonth[0].map((day, i) => (
           <span key={i} className="text-sm py-1 text-center">
             {day.format("dd").charAt(0)}

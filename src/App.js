@@ -3,7 +3,7 @@ import "./App.css";
 import getMonth from "../src/utils/getMonth";
 import NavigationBar from "./components/main/NavigationBar";
 import CalendarView from "./components/main/CalendarView";
-import SideBar from "./components/sidebar/SideBar";
+import Sidebar from "./components/sidebar/Sidebar";
 import GlobalContext from "./context/GlobalContext";
 
 function App() {
@@ -13,11 +13,11 @@ function App() {
     setCurrentMonth(getMonth(monthNumber));
   }, [monthNumber]);
   return (
-    <div className="flex flex-1 h-screen">
-      <div className="flex flex-col relative ">
-        <SideBar month={currentMonth} />
+    <div className="flex flex-1 h-screen overflow-y-hidden">
+      <div className="flex flex-col relative overflow-y-scroll no-scrollbar">
+        <Sidebar />
       </div>
-      <div className="flex flex-1 flex-col relative bg-blue-200">
+      <div className="flex flex-1 flex-col bg-blue-200">
         <NavigationBar />
         <CalendarView month={currentMonth} />
       </div>

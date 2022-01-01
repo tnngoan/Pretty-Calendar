@@ -17,12 +17,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [ ] User can add a link to online meeting with their appointments/webinar event.
 - [ ] User can invite another person via email.
 
+## Sources used in project:
 
-## Library used in project:
+- [dayjs](https://www.npmjs.com/package/dayjs)
 
-* `day.js`
+- [data generator](https://www.mockaroo.com/)
 
-* 
+- [icons](https://fontawesome.com/)
+
+-
 
 ## Available Scripts
 
