@@ -13,7 +13,7 @@ function App() {
     setCurrentMonth(getMonth(monthNumber));
   }, [monthNumber]);
   return (
-    <div className="flex flex-1 h-screen overflow-y-hidden">
+    <div className="flex flex-1 h-screen overflow-y-hidden gap-2">
       <div className="flex flex-col relative overflow-y-scroll no-scrollbar">
         <Sidebar />
       </div>

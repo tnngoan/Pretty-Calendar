@@ -23,10 +23,10 @@ function NavigationBar() {
       : setMonthNumber(dayjs().month());
   }
   return (
-    <div className="flex justify-between items-center h-20 px-12">
+    <div className="flex justify-between items-center h-20 px-6">
       <div className="flex justify-around flex-shrink items-center text-blue-800">
         <button
-          className="px-4 border-1 border-blue-700 rounded-xl"
+          className="px-4 py-1 border-1 border-blue-700 rounded-lg border-2 mr-2"
           onClick={getToday}
         >
           Today
@@ -41,7 +41,7 @@ function NavigationBar() {
           className="px-4 cursor-pointer"
           onClick={nextMonth}
         />
-        <h2 className="px-4 font-semibold">
+        <h2 className="px-4 font-semibold text-2xl">
           {dayjs(new Date(dayjs().year(), monthNumber)).format("MMMM YYYY")}
         </h2>
       </div>

@@ -27,9 +27,9 @@ function SidebarEvents() {
     console.log(events);
   }
   return (
-    <div className="px-4">
-      <div className="flex items-center justify-between">
-        <h3 className="font-bold text-blue-800" onClick={showEvents}>
+    <div className="px-4 bg-red-200">
+      <div className="flex items-baseline justify-between">
+        <h3 className="font-bold text-blue-800 text-xl" onClick={showEvents}>
           Upcoming Events
         </h3>
         <button className="py-2 px-4 text-xs text-gray-100 rounded-3xl bg-blue-700">
@@ -37,9 +37,7 @@ function SidebarEvents() {
         </button>
       </div>
       <p>Today, 1 Jan</p>
-      <Event />
-      <Event />
-      <Event />
+      <Event  />
     </div>
   );
 }

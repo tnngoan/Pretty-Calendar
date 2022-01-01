@@ -16,7 +16,8 @@ export default function SidebarCalendar() {
     setCurrentMonth(getMonth(currentMonthNumber));
   }, [currentMonthNumber]);
 
-  const { monthNumber } = useContext(GlobalContext);
+  const { monthNumber, setSidebarCalendarMonth, setDatSelected } =
+    useContext(GlobalContext);
 
   useEffect(() => {
     setCurrentMonthNumber(monthNumber);
@@ -68,7 +69,14 @@ export default function SidebarCalendar() {
         {currentMonth.map((week, i) => (
           <React.Fragment key={i}>
             {week.map((day, id) => (
-              <button key={id} className={`py-1 w-full ${daySelected(day)}`}>
+              <button
+                onClick={() => {
+                  setSidebarCalendarMonth(currentMonthNumber);
+                  setDatSelected(day);
+                }}
+                key={id}
+                className={`py-1 w-full ${daySelected(day)}`}
+              >
                 <span className="text-sm">{day.format("D")}</span>
               </button>
             ))}
