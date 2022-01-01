@@ -7,15 +7,14 @@ import SideBar from "./components/SideBar";
 
 function App() {
   const [currentMonth, setCurrentMonth] = useState(getMonth());
-  console.log(getMonth(4));
   return (
-    <div className="flex flex-col">
-      <div>
+    <div className="flex tracking-wider	">
+      <div className="flex flex-col w-25%">
+        <SideBar month={currentMonth} />
+      </div>
+      <div className="relative flex flex-col w-full bg-blue-200">
         <NavigationBar />
-        <div className="flex flex-1">
-          <SideBar month={currentMonth} />
-          <CalendarView month={currentMonth} />
-        </div>
+        <CalendarView month={currentMonth} />
       </div>
     </div>
   );
