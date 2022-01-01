@@ -2,6 +2,22 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Features available in the project:
+
+- [ ] User can click on the small calendar on the sidebar to see events on current day under "Upcoming Events" title.
+- [ ] User can click see all to view all events in the next days/months/years.
+- [ ] User can click on emails that linked to profiles of people who are invited.
+
+## Rockets:
+
+- [ ] User can add an event by clicking on a specific day.
+- [ ] User can add a title for their events.
+- [ ] User can choose the type of event they want to add (either a webinar or an appointment).
+- [ ] User can add an attended time for the event.
+- [ ] User can add a link to online meeting with their appointments/webinar event.
+- [ ] User can invite another person via email.
+
+
 ## Library used in project:
 
 * `day.js`

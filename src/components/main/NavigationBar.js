@@ -5,7 +5,7 @@ import {
   faChevronLeft,
   faChevronDown,
 } from "@fortawesome/free-solid-svg-icons";
-import GlobalContext from "../context/GlobalContext";
+import GlobalContext from "../../context/GlobalContext";
 import dayjs from "dayjs";
 
 function NavigationBar() {
@@ -17,7 +17,10 @@ function NavigationBar() {
     setMonthNumber(monthNumber + 1);
   }
   function getToday() {
-    setMonthNumber(dayjs().month());
+    // check if sending the same value to useEffect, if yes turn it to negative
+    monthNumber === dayjs().month()
+      ? setMonthNumber(monthNumber * -1)
+      : setMonthNumber(dayjs().month());
   }
   return (
     <div className="flex justify-between items-center h-20 px-12">

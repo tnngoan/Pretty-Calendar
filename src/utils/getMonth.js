@@ -1,10 +1,12 @@
 import dayjs from "dayjs";
 
 function getMonth(month = dayjs().month()) {
+  // we may have negative values, always convert the value to positive number
+  month = Math.abs(month);
   const year = dayjs().year();
   // this tell us which day of the week is the first day of the month
-  // const firstDayOfTheMonth = dayjs(new Date(year, month, 1)).day();
-  let currentMonthCount = 0;
+  const firstDayOfTheMonth = dayjs(new Date(year, month, 1)).day();
+  let currentMonthCount = 0 - firstDayOfTheMonth;
   // create 5 rows for each month and fill in every row with an empty array
   const daysMatrix = new Array(5).fill([]).map(() => {
     return new Array(7).fill(null).map(() => {
