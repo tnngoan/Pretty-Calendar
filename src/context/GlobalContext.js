@@ -6,7 +6,7 @@ const GlobalContext = React.createContext({
   sidebarCalendarMonth: 0,
   setSidebarCalendarMonth: (number) => {},
   daySelected: null,
-  setDatSelected: (day) => {},
+  setDaySelected: (day) => {},
 });
 
 export default GlobalContext;
