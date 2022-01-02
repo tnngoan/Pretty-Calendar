@@ -10,9 +10,11 @@ import GlobalContext from "./context/GlobalContext";
 function App() {
   const [currentMonth, setCurrentMonth] = useState(getMonth());
   const { monthNumber } = useContext(GlobalContext);
+  
   useEffect(() => {
     setCurrentMonth(getMonth(monthNumber));
   }, [monthNumber]);
+
   return (
     <div className="flex flex-1 h-screen overflow-y-hidden gap-3">
       <div className="flex flex-col relative overflow-y-scroll no-scrollbar w-80">

@@ -1,26 +1,38 @@
 import React, { useState, useEffect } from "react";
 import EventCard from "./EventCard";
 import dayjs from "dayjs";
-const formatForm = "DD-MM-YY";
+var relativeTime = require("dayjs/plugin/relativeTime");
+dayjs.extend(relativeTime);
+const formatForm = "DD-MM-YYYY";
 const today = dayjs().format(formatForm);
 const data = require("../../api/data.json");
 
 function SidebarEvents() {
-  const [events, setEvents] = useState([null]);
+  const [events, setEvents] = useState([]);
+
+  useEffect(() => {
+    getTodayEvents();
+  }, []);
 
   function getAllEvents() {
-    const futureEvents = events.filter((event) => {
+    let period;
+    let futureEvents = data.filter((event) => {
       const eventTime = dayjs(event.event_time).format(formatForm);
-      return today.diff(eventTime, "day") >= 0;
+      period = dayjs(eventTime).diff(today, "day") >= 0;
+      return period;
     });
-    setEvents(...events, ...futureEvents);
+    futureEvents = futureEvents.sort(function (a, b) {
+      return dayjs(a.event_time).fromNow() - dayjs(b.event_time).fromNow();
+    });
+    setEvents(futureEvents);
   }
-  useEffect(() => {
+
+  const getTodayEvents = async () => {
     const todayEvents = data.filter((event) => {
       return dayjs(event.event_time).format(formatForm) === today;
     });
     setEvents(todayEvents);
-  }, []);
+  };
 
   return (
     <div className="px-4 bg-red-200">
@@ -36,13 +48,14 @@ function SidebarEvents() {
       <div className="pb-4">
         <p className="text-md">Today, 1 Jan</p>
       </div>
-      {data.map((event) => (
+      {events.map((event) => (
         <EventCard
           key={event.id}
           title={event.event_title}
           time={event.event_time}
         />
       ))}
+      {console.log(events)}
     </div>
   );
 }
