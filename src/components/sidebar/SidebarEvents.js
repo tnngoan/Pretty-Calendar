@@ -15,15 +15,16 @@ function SidebarEvents() {
   }, []);
 
   function getAllEvents() {
-    let period;
     let futureEvents = data.filter((event) => {
-      const eventTime = dayjs(event.event_time).format(formatForm);
-      period = dayjs(eventTime).diff(today, "day") >= 0;
-      return period;
+      return dayjs().isAfter(dayjs(event.event_time)) === false;
     });
+
     futureEvents = futureEvents.sort(function (a, b) {
-      return dayjs(a.event_time).fromNow() - dayjs(b.event_time).fromNow();
+      a = dayjs(a.event_time);
+      b = dayjs(b.event_time);
+      return a.diff(today) - b.diff(today);
     });
+
     setEvents(futureEvents);
   }
 
