@@ -16,7 +16,7 @@ export default function SidebarCalendar() {
     setCurrentMonth(getMonth(currentMonthNumber));
   }, [currentMonthNumber]);
 
-  const { monthNumber, setSidebarCalendarMonth, setDatSelected } =
+  const { monthNumber, setSidebarCalendarMonth, setDaySelected, daySelected } =
     useContext(GlobalContext);
 
   useEffect(() => {
@@ -31,16 +31,24 @@ export default function SidebarCalendar() {
     setCurrentMonthNumber(currentMonthNumber + 1);
   }
 
-  function daySelected(day) {
+  function dayOnSelect(day) {
     const formatForm = "DD-MM-YY";
-    const currentDay = dayjs().format(formatForm);
-    const selectedDay = day.format(formatForm);
-    return currentDay === selectedDay
-      ? "bg-blue-700 rounded-full text-gray-100"
-      : "";
+    const today = dayjs().format(formatForm);
+    const currentSelected = day.format(formatForm);
+    const selectedDay = daySelected && daySelected.format(formatForm);
+    // if today is selected => deep blue
+    if (today === currentSelected) {
+      return "bg-blue-700 text-gray-100";
+    } else if (currentSelected === selectedDay) {
+      //if another day is selected => light blue
+      return "bg-blue-200 text-blue-800";
+    } else {
+      // otherwise don't give bg-color
+      return "text-gray-500";
+    }
   }
   return (
-    <div className="w-72 p-6">
+    <div className="p-4">
       <header className="flex justify-between items-center pt-3">
         <FontAwesomeIcon
           icon={faChevronLeft}
@@ -60,9 +68,9 @@ export default function SidebarCalendar() {
           onClick={nextMonth}
         />
       </header>
-      <div className="grid grid-cols-7 grid-rows-6 py-4">
+      <div className="grid grid-cols-7 grid-rows-6 p-2">
         {currentMonth[0].map((day, i) => (
-          <span key={i} className="text-sm py-1 text-center">
+          <span key={i} className="text-xs py-1 text-center">
             {day.format("dd").charAt(0)}
           </span>
         ))}
@@ -72,12 +80,12 @@ export default function SidebarCalendar() {
               <button
                 onClick={() => {
                   setSidebarCalendarMonth(currentMonthNumber);
-                  setDatSelected(day);
+                  setDaySelected(day);
                 }}
                 key={id}
-                className={`py-1 w-full ${daySelected(day)}`}
+                className={`py-2 my-1 w-full rounded-full ${dayOnSelect(day)}`}
               >
-                <span className="text-sm">{day.format("D")}</span>
+                <span className="text-xs">{day.format("D")}</span>
               </button>
             ))}
           </React.Fragment>

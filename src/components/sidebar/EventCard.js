@@ -1,13 +1,12 @@
 import React from "react";
 
-function Event() {
+function EventCard(props) {
   return (
     <div className="h-12">
-      <h3>Event Header</h3>
-      <p>Time of event and timezone</p>
-
+      <h3 className="overflow-hidden overflow-ellipsis">{props.title}</h3>
+      <p>{props.time}</p>
     </div>
   );
 }
 
-export default Event;
+export default EventCard;

@@ -1,502 +1,703 @@
-[{
+[
+  {
     "id": 1,
     "event_title": "nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo",
+    "event_type": "appointment",
     "event_time": "04/16/2033",
     "client_id": "jromanet0@shinystat.com"
-  }, {
+  },
+  {
     "id": 2,
     "event_title": "ac consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus",
+    "event_type": "appointment",
     "event_time": "06/22/2024",
     "client_id": "jfullerd1@archive.org"
-  }, {
+  },
+  {
     "id": 3,
     "event_title": "metus sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris",
+    "event_type": "appointment",
     "event_time": "11/27/2044",
     "client_id": "agarahan2@irs.gov"
-  }, {
+  },
+  {
     "id": 4,
     "event_title": "morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet",
+    "event_type": "appointment",
     "event_time": "01/03/2058",
     "client_id": "vjurick3@diigo.com"
-  }, {
+  },
+  {
     "id": 5,
     "event_title": "porttitor lorem id ligula suspendisse ornare consequat lectus in est",
+    "event_type": "appointment",
     "event_time": "04/24/2081",
     "client_id": "ssalmons4@berkeley.edu"
-  }, {
+  },
+  {
     "id": 6,
     "event_title": "risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc",
+    "event_type": "appointment",
     "event_time": "02/03/2034",
     "client_id": "badam5@aboutads.info"
-  }, {
+  },
+  {
     "id": 7,
     "event_title": "cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec euismod scelerisque",
+    "event_type": "appointment",
     "event_time": "09/04/2061",
     "client_id": "rgainforth6@squidoo.com"
-  }, {
+  },
+  {
     "id": 8,
     "event_title": "in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae",
+    "event_type": "appointment",
     "event_time": "03/12/2057",
     "client_id": "hferrone7@nationalgeographic.com"
-  }, {
+  },
+  {
     "id": 9,
     "event_title": "congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam",
+    "event_type": "appointment",
     "event_time": "05/29/2082",
     "client_id": "bcallard8@uol.com.br"
-  }, {
+  },
+  {
     "id": 10,
     "event_title": "praesent lectus vestibulum quam sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus",
+    "event_type": "appointment",
     "event_time": "10/08/2073",
     "client_id": "lruecastle9@squarespace.com"
-  }, {
+  },
+  {
     "id": 11,
     "event_title": "lobortis sapien sapien non mi integer ac neque duis bibendum morbi non",
+    "event_type": "appointment",
     "event_time": "06/25/2055",
     "client_id": "jlewseya@miibeian.gov.cn"
-  }, {
+  },
+  {
     "id": 12,
     "event_title": "blandit mi in porttitor pede justo eu massa donec dapibus duis",
+    "event_type": "appointment",
     "event_time": "02/15/2049",
     "client_id": "awestphalb@g.co"
-  }, {
+  },
+  {
     "id": 13,
     "event_title": "vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae",
+    "event_type": "appointment",
     "event_time": "06/29/2048",
     "client_id": "dwildinc@bigcartel.com"
-  }, {
+  },
+  {
     "id": 14,
     "event_title": "nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo eu",
+    "event_type": "appointment",
     "event_time": "08/03/2041",
     "client_id": "cmilkehamd@e-recht24.de"
-  }, {
+  },
+  {
     "id": 15,
     "event_title": "id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien",
+    "event_type": "appointment",
     "event_time": "09/03/2075",
     "client_id": "cpristnore@github.io"
-  }, {
+  },
+  {
     "id": 16,
     "event_title": "morbi a ipsum integer a nibh in quis justo maecenas rhoncus",
+    "event_type": "appointment",
     "event_time": "12/05/2044",
     "client_id": "mkielyf@theguardian.com"
-  }, {
+  },
+  {
     "id": 17,
     "event_title": "luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante",
+    "event_type": "appointment",
     "event_time": "07/30/2071",
     "client_id": "mmostyng@mapquest.com"
-  }, {
+  },
+  {
     "id": 18,
     "event_title": "et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui nec nisi volutpat eleifend donec",
+    "event_type": "appointment",
     "event_time": "12/14/2049",
     "client_id": "tbowcockh@indiatimes.com"
-  }, {
+  },
+  {
     "id": 19,
     "event_title": "a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt",
+    "event_type": "appointment",
     "event_time": "02/15/2069",
     "client_id": "jfaderi@icq.com"
-  }, {
+  },
+  {
     "id": 20,
     "event_title": "in consequat ut nulla sed accumsan felis ut at dolor quis",
+    "event_type": "appointment",
     "event_time": "05/24/2025",
     "client_id": "mmatusj@ft.com"
-  }, {
+  },
+  {
     "id": 21,
     "event_title": "dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus",
+    "event_type": "appointment",
     "event_time": "01/20/2057",
     "client_id": "ecolenuttk@yelp.com"
-  }, {
+  },
+  {
     "id": 22,
     "event_title": "venenatis turpis enim blandit mi in porttitor pede justo eu massa donec dapibus duis at velit eu est",
+    "event_type": "appointment",
     "event_time": "04/22/2084",
     "client_id": "vkennetl@joomla.org"
-  }, {
+  },
+  {
     "id": 23,
     "event_title": "posuere metus vitae ipsum aliquam non mauris morbi non lectus aliquam",
+    "event_type": "appointment",
     "event_time": "05/04/2058",
     "client_id": "cneseym@addtoany.com"
-  }, {
+  },
+  {
     "id": 24,
     "event_title": "semper sapien a libero nam dui proin leo odio porttitor id consequat in consequat ut nulla sed accumsan felis",
+    "event_type": "appointment",
     "event_time": "05/18/2033",
     "client_id": "rjacombn@economist.com"
-  }, {
+  },
+  {
     "id": 25,
     "event_title": "id massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras",
+    "event_type": "appointment",
     "event_time": "02/04/2078",
     "client_id": "ekubickio@addthis.com"
-  }, {
+  },
+  {
     "id": 26,
     "event_title": "volutpat quam pede lobortis ligula sit amet eleifend pede libero quis",
+    "event_type": "appointment",
     "event_time": "09/29/2045",
     "client_id": "mbaylesp@twitter.com"
-  }, {
+  },
+  {
     "id": 27,
     "event_title": "morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar",
+    "event_type": "appointment",
     "event_time": "05/30/2047",
     "client_id": "gfeenyq@usgs.gov"
-  }, {
+  },
+  {
     "id": 28,
     "event_title": "duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla",
+    "event_type": "appointment",
     "event_time": "06/16/2065",
     "client_id": "baskenr@springer.com"
-  }, {
+  },
+  {
     "id": 29,
     "event_title": "id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede malesuada in",
+    "event_type": "appointment",
     "event_time": "03/19/2085",
     "client_id": "ajouannots@huffingtonpost.com"
-  }, {
+  },
+  {
     "id": 30,
     "event_title": "libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit",
+    "event_type": "appointment",
     "event_time": "05/28/2048",
     "client_id": "grancet@sitemeter.com"
-  }, {
+  },
+  {
     "id": 31,
     "event_title": "donec posuere metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet diam in magna bibendum",
+    "event_type": "appointment",
     "event_time": "03/27/2033",
     "client_id": "ahubbertu@elpais.com"
-  }, {
+  },
+  {
     "id": 32,
     "event_title": "pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie nibh in lectus pellentesque at nulla suspendisse",
+    "event_type": "appointment",
     "event_time": "05/28/2058",
     "client_id": "kformoyv@samsung.com"
-  }, {
+  },
+  {
     "id": 33,
     "event_title": "justo eu massa donec dapibus duis at velit eu est congue elementum",
+    "event_type": "appointment",
     "event_time": "07/21/2038",
     "client_id": "arennebeckw@weather.com"
-  }, {
+  },
+  {
     "id": 34,
     "event_title": "ut tellus nulla ut erat id mauris vulputate elementum nullam varius",
+    "event_type": "appointment",
     "event_time": "11/06/2029",
     "client_id": "dcrutx@blogspot.com"
-  }, {
+  },
+  {
     "id": 35,
     "event_title": "sagittis nam congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend",
+    "event_type": "appointment",
     "event_time": "08/24/2071",
     "client_id": "sshawyersy@surveymonkey.com"
-  }, {
+  },
+  {
     "id": 36,
     "event_title": "sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis",
+    "event_type": "appointment",
     "event_time": "01/15/2052",
     "client_id": "cpedracciz@businesswire.com"
-  }, {
+  },
+  {
     "id": 37,
     "event_title": "suspendisse potenti nullam porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris",
+    "event_type": "appointment",
     "event_time": "08/27/2046",
     "client_id": "memmens10@vimeo.com"
-  }, {
+  },
+  {
     "id": 38,
     "event_title": "aliquam sit amet diam in magna bibendum imperdiet nullam orci pede",
+    "event_type": "appointment",
     "event_time": "12/22/2032",
     "client_id": "aallery11@vkontakte.ru"
-  }, {
+  },
+  {
     "id": 39,
     "event_title": "morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien",
+    "event_type": "appointment",
     "event_time": "02/03/2064",
     "client_id": "gminillo12@google.de"
-  }, {
+  },
+  {
     "id": 40,
     "event_title": "non ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae",
+    "event_type": "appointment",
     "event_time": "11/02/2083",
     "client_id": "fhaggath13@ebay.com"
-  }, {
+  },
+  {
     "id": 41,
     "event_title": "cubilia curae nulla dapibus dolor vel est donec odio justo sollicitudin ut suscipit a feugiat et eros",
+    "event_type": "appointment",
     "event_time": "11/25/2042",
     "client_id": "jboylund14@prlog.org"
-  }, {
+  },
+  {
     "id": 42,
     "event_title": "velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo",
+    "event_type": "appointment",
     "event_time": "10/22/2035",
     "client_id": "atrembath15@dagondesign.com"
-  }, {
+  },
+  {
     "id": 43,
     "event_title": "sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis nam congue risus semper",
+    "event_type": "appointment",
     "event_time": "03/20/2038",
     "client_id": "pmogridge16@telegraph.co.uk"
-  }, {
+  },
+  {
     "id": 44,
     "event_title": "eget nunc donec quis orci eget orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio odio",
+    "event_type": "appointment",
     "event_time": "10/12/2084",
     "client_id": "ekenchington17@smugmug.com"
-  }, {
+  },
+  {
     "id": 45,
     "event_title": "sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at diam nam tristique tortor eu pede",
+    "event_type": "appointment",
     "event_time": "02/29/2040",
     "client_id": "irawlings18@china.com.cn"
-  }, {
+  },
+  {
     "id": 46,
     "event_title": "a libero nam dui proin leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut",
+    "event_type": "appointment",
     "event_time": "11/27/2062",
     "client_id": "oearey19@wikispaces.com"
-  }, {
+  },
+  {
     "id": 47,
     "event_title": "erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam",
+    "event_type": "appointment",
     "event_time": "08/05/2051",
     "client_id": "lsouthon1a@flavors.me"
-  }, {
+  },
+  {
     "id": 48,
     "event_title": "id massa id nisl venenatis lacinia aenean sit amet justo morbi ut",
+    "event_type": "appointment",
     "event_time": "01/17/2031",
     "client_id": "lbrunini1b@elegantthemes.com"
-  }, {
+  },
+  {
     "id": 49,
     "event_title": "in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus",
+    "event_type": "appointment",
     "event_time": "11/24/2028",
     "client_id": "csalway1c@indiatimes.com"
-  }, {
+  },
+  {
     "id": 50,
     "event_title": "penatibus et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien",
+    "event_type": "appointment",
     "event_time": "06/16/2038",
     "client_id": "kparagreen1d@purevolume.com"
-  }, {
+  },
+  {
     "id": 51,
     "event_title": "metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque libero convallis eget eleifend luctus ultricies eu",
+    "event_type": "appointment",
     "event_time": "07/20/2056",
     "client_id": "nwillbond1e@bloglovin.com"
-  }, {
+  },
+  {
     "id": 52,
     "event_title": "felis fusce posuere felis sed lacus morbi sem mauris laoreet ut rhoncus aliquet",
+    "event_type": "appointment",
     "event_time": "06/28/2072",
     "client_id": "sjimeno1f@hostgator.com"
-  }, {
+  },
+  {
     "id": 53,
     "event_title": "donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit",
+    "event_type": "appointment",
     "event_time": "12/26/2064",
     "client_id": "gharg1g@fotki.com"
-  }, {
+  },
+  {
     "id": 54,
     "event_title": "gravida sem praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi",
+    "event_type": "appointment",
     "event_time": "06/21/2045",
     "client_id": "aburr1h@theatlantic.com"
-  }, {
+  },
+  {
     "id": 55,
     "event_title": "vivamus in felis eu sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec euismod",
+    "event_type": "appointment",
     "event_time": "07/09/2084",
     "client_id": "brosbrough1i@newsvine.com"
-  }, {
+  },
+  {
     "id": 56,
     "event_title": "lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet",
+    "event_type": "appointment",
     "event_time": "01/28/2085",
     "client_id": "ctummond1j@thetimes.co.uk"
-  }, {
+  },
+  {
     "id": 57,
     "event_title": "et tempus semper est quam pharetra magna ac consequat metus",
+    "event_type": "appointment",
     "event_time": "01/02/2032",
     "client_id": "fharbisher1k@examiner.com"
-  }, {
+  },
+  {
     "id": 58,
     "event_title": "aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id",
+    "event_type": "appointment",
     "event_time": "12/09/2050",
     "client_id": "jrhead1l@adobe.com"
-  }, {
+  },
+  {
     "id": 59,
     "event_title": "mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea",
+    "event_type": "appointment",
     "event_time": "12/18/2077",
     "client_id": "aphilippon1m@angelfire.com"
-  }, {
+  },
+  {
     "id": 60,
     "event_title": "quisque arcu libero rutrum ac lobortis vel dapibus at diam nam tristique tortor",
+    "event_type": "appointment",
     "event_time": "11/13/2038",
     "client_id": "rpuxley1n@telegraph.co.uk"
-  }, {
+  },
+  {
     "id": 61,
     "event_title": "molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum",
+    "event_type": "appointment",
     "event_time": "08/15/2068",
     "client_id": "rwinward1o@statcounter.com"
-  }, {
+  },
+  {
     "id": 62,
     "event_title": "condimentum curabitur in libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt",
+    "event_type": "appointment",
     "event_time": "01/30/2058",
     "client_id": "dranklin1p@sogou.com"
-  }, {
+  },
+  {
     "id": 63,
     "event_title": "nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla",
+    "event_type": "appointment",
     "event_time": "11/06/2042",
     "client_id": "dengall1q@upenn.edu"
-  }, {
+  },
+  {
     "id": 64,
     "event_title": "at lorem integer tincidunt ante vel ipsum praesent blandit lacinia",
+    "event_type": "appointment",
     "event_time": "02/26/2079",
     "client_id": "rdotterill1r@amazon.de"
-  }, {
+  },
+  {
     "id": 65,
     "event_title": "in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus",
+    "event_type": "appointment",
     "event_time": "09/01/2081",
     "client_id": "kpiechnik1s@eventbrite.com"
-  }, {
+  },
+  {
     "id": 66,
     "event_title": "nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque",
+    "event_type": "appointment",
     "event_time": "11/28/2080",
     "client_id": "rrzehor1t@bloglovin.com"
-  }, {
+  },
+  {
     "id": 67,
     "event_title": "nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem",
+    "event_type": "webinar",
     "event_time": "06/30/2027",
     "client_id": "mhatwells1u@barnesandnoble.com"
-  }, {
+  },
+  {
     "id": 68,
     "event_title": "vestibulum quam sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus",
+    "event_type": "webinar",
     "event_time": "08/21/2072",
     "client_id": "mbeslier1v@skyrock.com"
-  }, {
+  },
+  {
     "id": 69,
     "event_title": "orci pede venenatis non sodales sed tincidunt eu felis fusce posuere felis sed lacus morbi sem mauris laoreet ut rhoncus",
+    "event_type": "webinar",
     "event_time": "04/02/2055",
     "client_id": "mdupree1w@jigsy.com"
-  }, {
+  },
+  {
     "id": 70,
     "event_title": "sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus",
+    "event_type": "webinar",
     "event_time": "12/15/2059",
     "client_id": "tfrift1x@etsy.com"
-  }, {
+  },
+  {
     "id": 71,
     "event_title": "pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie nibh in lectus pellentesque",
+    "event_type": "webinar",
     "event_time": "12/20/2062",
     "client_id": "eswyn1y@google.ca"
-  }, {
+  },
+  {
     "id": 72,
     "event_title": "ac consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia",
+    "event_type": "webinar",
     "event_time": "02/05/2078",
     "client_id": "ajekyll1z@samsung.com"
-  }, {
+  },
+  {
     "id": 73,
     "event_title": "integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed",
+    "event_type": "webinar",
     "event_time": "02/09/2051",
     "client_id": "gbartram20@cdc.gov"
-  }, {
+  },
+  {
     "id": 74,
     "event_title": "pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit",
+    "event_type": "webinar",
     "event_time": "05/13/2030",
     "client_id": "rcleeton21@utexas.edu"
-  }, {
+  },
+  {
     "id": 75,
     "event_title": "at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac",
+    "event_type": "webinar",
     "event_time": "08/17/2043",
     "client_id": "scanto22@infoseek.co.jp"
-  }, {
+  },
+  {
     "id": 76,
     "event_title": "vulputate justo in blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing elit proin interdum mauris non",
+    "event_type": "webinar",
     "event_time": "04/27/2083",
     "client_id": "jganders23@mashable.com"
-  }, {
+  },
+  {
     "id": 77,
     "event_title": "nulla integer pede justo lacinia eget tincidunt eget tempus vel",
+    "event_type": "webinar",
     "event_time": "08/11/2067",
     "client_id": "asuttill24@hibu.com"
-  }, {
+  },
+  {
     "id": 78,
     "event_title": "at feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst",
+    "event_type": "webinar",
     "event_time": "12/06/2085",
     "client_id": "ygeach25@marketwatch.com"
-  }, {
+  },
+  {
     "id": 79,
     "event_title": "sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis",
+    "event_type": "webinar",
     "event_time": "11/14/2043",
     "client_id": "lamori26@mashable.com"
-  }, {
+  },
+  {
     "id": 80,
     "event_title": "justo morbi ut odio cras mi pede malesuada in imperdiet",
+    "event_type": "webinar",
     "event_time": "08/15/2032",
     "client_id": "abartram27@51.la"
-  }, {
+  },
+  {
     "id": 81,
     "event_title": "imperdiet sapien urna pretium nisl ut volutpat sapien arcu sed augue aliquam erat volutpat",
+    "event_type": "webinar",
     "event_time": "01/18/2048",
     "client_id": "klis28@yale.edu"
-  }, {
+  },
+  {
     "id": 82,
     "event_title": "mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis",
+    "event_type": "webinar",
     "event_time": "05/08/2022",
     "client_id": "maulds29@nydailynews.com"
-  }, {
+  },
+  {
     "id": 83,
     "event_title": "amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit",
+    "event_type": "webinar",
     "event_time": "03/25/2033",
     "client_id": "cperigeaux2a@nba.com"
-  }, {
+  },
+  {
     "id": 84,
     "event_title": "cubilia curae nulla dapibus dolor vel est donec odio justo sollicitudin ut",
+    "event_type": "webinar",
     "event_time": "06/17/2031",
     "client_id": "mdelhanty2b@blinklist.com"
-  }, {
+  },
+  {
     "id": 85,
     "event_title": "hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer",
+    "event_type": "webinar",
     "event_time": "04/20/2037",
     "client_id": "tmcilvaney2c@boston.com"
-  }, {
+  },
+  {
     "id": 86,
     "event_title": "proin eu mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula",
+    "event_type": "webinar",
     "event_time": "10/15/2021",
     "client_id": "mviegas2d@ucsd.edu"
-  }, {
+  },
+  {
     "id": 87,
     "event_title": "placerat ante nulla justo aliquam quis turpis eget elit sodales scelerisque",
+    "event_type": "webinar",
     "event_time": "08/24/2067",
     "client_id": "ecroley2e@jiathis.com"
-  }, {
+  },
+  {
     "id": 88,
     "event_type_id": 88,
     "event_title": "aenean fermentum donec ut mauris eget massa tempor convallis nulla",
+    "event_type": "webinar",
     "event_time": "07/19/2047",
     "client_id": "fmurty2f@marketwatch.com"
-  }, {
+  },
+  {
     "id": 89,
     "event_title": "donec semper sapien a libero nam dui proin leo odio porttitor id consequat in consequat ut nulla sed",
+    "event_type": "webinar",
     "event_time": "08/09/2050",
     "client_id": "tredmond2g@bbc.co.uk"
-  }, {
+  },
+  {
     "id": 90,
     "event_title": "eget semper rutrum nulla nunc purus phasellus in felis donec semper sapien a libero nam dui",
+    "event_type": "webinar",
     "event_time": "11/21/2062",
     "client_id": "bfarris2h@cbc.ca"
-  }, {
+  },
+  {
     "id": 91,
     "event_title": "mattis nibh ligula nec sem duis aliquam convallis nunc proin",
+    "event_type": "webinar",
     "event_time": "01/05/2035",
     "client_id": "ldonaho2i@wikia.com"
-  }, {
+  },
+  {
     "id": 92,
     "event_title": "vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id nisl venenatis lacinia aenean",
+    "event_type": "webinar",
     "event_time": "08/18/2081",
     "client_id": "dpitkaithly2j@furl.net"
-  }, {
+  },
+  {
     "id": 93,
     "event_title": "eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum donec",
+    "event_type": "webinar",
     "event_time": "02/27/2023",
     "client_id": "msilcocks2k@kickstarter.com"
-  }, {
+  },
+  {
     "id": 94,
     "event_title": "vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at",
+    "event_type": "webinar",
     "event_time": "08/13/2034",
     "client_id": "lventum2l@quantcast.com"
-  }, {
+  },
+  {
     "id": 95,
     "event_title": "etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla",
+    "event_type": "webinar",
     "event_time": "11/05/2055",
     "client_id": "dvanyakin2m@is.gd"
-  }, {
+  },
+  {
     "id": 96,
     "event_title": "nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in",
+    "event_type": "webinar",
     "event_time": "12/29/2071",
     "client_id": "ibothbie2n@ucoz.com"
-  }, {
+  },
+  {
     "id": 97,
     "event_title": "montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida",
+    "event_type": "webinar",
     "event_time": "04/05/2062",
     "client_id": "gmaccolm2o@gnu.org"
-  }, {
+  },
+  {
     "id": 98,
     "event_title": "luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida",
+    "event_type": "webinar",
     "event_time": "06/02/2068",
     "client_id": "tbigadike2p@examiner.com"
-  }, {
+  },
+  {
     "id": 99,
     "event_title": "eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat",
+    "event_type": "webinar",
     "event_time": "12/14/2070",
     "client_id": "emapes2q@cafepress.com"
-  }, {
+  },
+  {
     "id": 100,
     "event_title": "fermentum donec ut mauris eget massa tempor convallis nulla neque libero convallis eget eleifend",
+    "event_type": "webinar",
     "event_time": "02/28/2021",
     "client_id": "btittershill2r@icio.us"
-  }]
+  }
+]
