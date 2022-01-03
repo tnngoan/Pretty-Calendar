@@ -9,7 +9,8 @@ import GlobalContext from "../../context/GlobalContext";
 import dayjs from "dayjs";
 
 function NavigationBar() {
-  const { monthNumber, setMonthNumber } = useContext(GlobalContext);
+  const { monthNumber, setMonthNumber, setDaySelected } =
+    useContext(GlobalContext);
   function prevMonth() {
     setMonthNumber(monthNumber - 1);
   }
@@ -21,9 +22,13 @@ function NavigationBar() {
     monthNumber === dayjs().month()
       ? setMonthNumber(monthNumber * -1)
       : setMonthNumber(dayjs().month());
+    setDaySelected(dayjs());
+  }
+  function openModal(){
+    
   }
   return (
-    <div className="flex justify-between items-center h-20 px-6 bg-white rounded-t-sm border border-b-0">
+    <div className="flex justify-between items-center h-20 px-6 py-4 bg-white rounded-t-sm border border-b-0">
       <div className="flex justify-around flex-shrink items-center text-blue-800">
         <button
           className="px-4 py-1 border-1 border-blue-700 rounded-lg border-2 mr-2"
@@ -46,7 +51,10 @@ function NavigationBar() {
         </h2>
       </div>
       <div>
-        <button className="bg-blue-700 p-2 px-4 rounded-xl text-gray-100">
+        <button
+          onClick={openModal}
+          className="bg-blue-700 p-2 px-4 rounded-xl text-gray-100"
+        >
           Month
           <FontAwesomeIcon icon={faChevronDown} className="px-2" />
         </button>

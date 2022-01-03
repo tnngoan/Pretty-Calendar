@@ -28,7 +28,7 @@ function EventCard(props) {
             event.name
           )}`}
         >
-          <h3 className="text-ellipsis overflow-hidden no-wrap font-bold">
+          <h3 className="text-ellipsis overflow-hidden wrap font-bold">
             Webinar: {event.name}
           </h3>
           <p className="text-xs pt-2">
