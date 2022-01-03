@@ -24,11 +24,11 @@ function EventCard(props) {
     <React.Fragment>
       {event.type === 0 ? (
         <div
-          className={`border border-gray-300 p-4 my-2 rounded-lg border-l-8 ${applyColor(
+          className={`border border-gray-100 p-4 my-2 rounded-lg border-l-8 ${applyColor(
             event.name
           )}`}
         >
-          <h3 className="text-ellipsis overflow-hidden no-wrap font-bold">
+          <h3 className="text-ellipsis overflow-hidden wrap font-bold">
             Webinar: {event.name}
           </h3>
           <p className="text-xs pt-2">
@@ -67,8 +67,8 @@ function EventCard(props) {
               />
             </div>
 
-            <p className="text-xs text-center align-center cursor-pointer tracking-wider underline text-blue-400">
-              <a href={event.link_to_memitrovicj}>View Client Profile</a>
+            <p className="text-xs text-center align-center cursor-pointer tracking-wider underline">
+              <a href={event.link_to_meet}>View Client Profile</a>
             </p>
           </div>
         </div>

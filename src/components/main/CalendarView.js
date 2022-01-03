@@ -15,7 +15,7 @@ function CalendarView({ month }) {
         {month.map((week, i) => (
           <React.Fragment key={i}>
             {week.map((day, id) => (
-              <Day key={id} day={day} rowNumber={i} />
+              <Day key={id} day={day} />
             ))}
           </React.Fragment>
         ))}
