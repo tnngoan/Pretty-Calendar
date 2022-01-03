@@ -5,7 +5,8 @@ import dayjs from "dayjs";
 function ContextWrapper(props) {
   const [monthNumber, setMonthNumber] = useState(dayjs().month());
   const [sidebarCalendarMonth, setSidebarCalendarMonth] = useState(null);
-  const [daySelected, setDaySelected] = useState(null);
+  const [daySelected, setDaySelected] = useState(dayjs());
+  const [allEvents, setAllEvents] = useState([]);
   useEffect(() => {
     if (sidebarCalendarMonth !== null) {
       setMonthNumber(sidebarCalendarMonth);
@@ -19,7 +20,9 @@ function ContextWrapper(props) {
         sidebarCalendarMonth,
         setSidebarCalendarMonth,
         daySelected,
-        setDaySelected
+        setDaySelected,
+        allEvents,
+        setAllEvents,
       }}
     >
       {props.children}
