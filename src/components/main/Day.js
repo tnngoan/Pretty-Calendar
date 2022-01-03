@@ -9,8 +9,22 @@ function Day({ day }) {
   const { monthNumber } = useContext(GlobalContext);
 
   useEffect(() => {
+    function findEvents() {
+      let newEvents = data.filter((event) => {
+        return (
+          dayjs(event.date).format(formatForm) === dayjs(day).format(formatForm)
+        );
+      });
+      newEvents = newEvents.sort(function (a, b) {
+        a = dayjs(a.date);
+        b = dayjs(b.date);
+        return a.diff(day) - b.diff(day);
+      });
+      const topEvents = newEvents.slice(0, 2);
+      setEvents(topEvents);
+    }
     findEvents();
-  }, [monthNumber]);
+  }, [monthNumber, day]);
 
   function daySelected() {
     return day.format(formatForm) === dayjs().format(formatForm)
@@ -20,21 +34,6 @@ function Day({ day }) {
 
   function addEvent() {
     console.log("Feature coming!");
-  }
-
-  function findEvents() {
-    let newEvents = data.filter((event) => {
-      return (
-        dayjs(event.date).format(formatForm) === dayjs(day).format(formatForm)
-      );
-    });
-    newEvents = newEvents.sort(function (a, b) {
-      a = dayjs(a.date);
-      b = dayjs(b.date);
-      return a.diff(day) - b.diff(day);
-    });
-    const topEvents = newEvents.slice(0, 2);
-    setEvents(topEvents);
   }
 
   function handleClick() {
