@@ -23,7 +23,7 @@ function NavigationBar() {
       : setMonthNumber(dayjs().month());
   }
   return (
-    <div className="flex justify-between items-center h-20 px-6">
+    <div className="flex justify-between items-center h-20 px-6 bg-white rounded-t-sm border border-b-0">
       <div className="flex justify-around flex-shrink items-center text-blue-800">
         <button
           className="px-4 py-1 border-1 border-blue-700 rounded-lg border-2 mr-2"
