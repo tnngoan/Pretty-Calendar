@@ -9,7 +9,7 @@ function Day({ day }) {
       : "";
   }
   function addEvent() {
-    return alert("Add new event!")
+    return alert("Add new event!");
   }
 
   return (
@@ -17,7 +17,7 @@ function Day({ day }) {
       <div className="flex flex-col items-center">
         <p
           onClick={addEvent}
-          className={`text-md p-1 px-2 my-2 mt-4 text-center ${daySelected()} hover:bg-gray-200 hover:rounded-full cursor-pointer`}
+          className={`text-md p-1 px-2 my-2 text-center ${daySelected()} hover:bg-gray-200 hover:rounded-full cursor-pointer`}
         >
           {day.format("DD")}
         </p>

@@ -83,7 +83,9 @@ export default function SidebarCalendar() {
                   setDaySelected(day);
                 }}
                 key={id}
-                className={`py-1 align-center w-8 rounded-full ${dayOnSelect(day)}`}
+                className={`py-1 align-center w-8 rounded-full ${dayOnSelect(
+                  day
+                )}`}
               >
                 <span className="text-xs">{day.format("D")}</span>
               </button>
