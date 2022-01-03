@@ -4,13 +4,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Features available in the project:
 
-- [ ] User can click on the small calendar on the sidebar to see events on current day under "Upcoming Events" title.
-- [ ] User can click see all to view all events in the next days/months/years.
-- [ ] User can click on emails that linked to profiles of people who are invited.
+- [x] User can click on the small calendar on the sidebar to see events on current day under "Upcoming Events" title.
+- [x] User can click see all to view all events within the current month.
+- [x] User can click on "View client profile" to go to a random website.
+- [] User can see list of events of each day in big view.
+
 
 ## Rockets:
 
-- [ ] User can add an event by clicking on a specific day.
+- [x] User can see a promt of creating an event by clicking on a specific day in big view.
 - [ ] User can add a title for their events.
 - [ ] User can choose the type of event they want to add (either a webinar or an appointment).
 - [ ] User can add an attended time for the event.

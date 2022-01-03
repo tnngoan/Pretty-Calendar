@@ -1,15 +1,35 @@
-import React from "react";
+import React, { useState, useContext, useEffect } from "react";
+import GlobalContext from "../../context/GlobalContext";
 import dayjs from "dayjs";
 const formatForm = "DD-MM-YY";
 
 function Day({ day }) {
+  const [events, setEvents] = useState([]);
+  const { allEvents, monthNumber } = useContext(GlobalContext);
+  useEffect(() => {
+    findEvents();
+  }, [monthNumber]);
+
   function daySelected() {
     return day.format(formatForm) === dayjs().format(formatForm)
       ? "bg-blue-700 text-grey-50 w-8 rounded-full"
       : "";
   }
+
   function addEvent() {
     return alert("Add new event!");
+  }
+
+  function findEvents(today) {
+    allEvents.filter((event) => {
+      return (
+        dayjs(event.date).format(formatForm) === dayjs(day).format(formatForm)
+      );
+    });
+    allEvents.sort(function (a, b) {
+      console.log(dayjs(a.date).format("HHmmss"));
+      return dayjs(a.date).format("HHmmss") - dayjs(b.date).format("HHmmss");
+    });
   }
 
   return (
@@ -21,6 +41,9 @@ function Day({ day }) {
         >
           {day.format("DD")}
         </p>
+        <li className="">
+          <ul></ul>
+        </li>
       </div>
     </div>
   );

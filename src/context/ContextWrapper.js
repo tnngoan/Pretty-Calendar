@@ -7,11 +7,13 @@ function ContextWrapper(props) {
   const [sidebarCalendarMonth, setSidebarCalendarMonth] = useState(null);
   const [daySelected, setDaySelected] = useState(dayjs());
   const [allEvents, setAllEvents] = useState([]);
+
   useEffect(() => {
     if (sidebarCalendarMonth !== null) {
       setMonthNumber(sidebarCalendarMonth);
     }
   }, [sidebarCalendarMonth]);
+  
   return (
     <GlobalContext.Provider
       value={{

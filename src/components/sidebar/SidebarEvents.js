@@ -10,16 +10,19 @@ const data = require("../../api/data.json");
 
 function SidebarEvents() {
   const [events, setEvents] = useState([]);
-  const { daySelected } = useContext(GlobalContext);
-
+  const { daySelected, monthNumber, setAllEvents } = useContext(GlobalContext);
+  
+  setAllEvents(data);
+  
   useEffect(() => {
     getTodayEvents(daySelected.format(formatForm));
   }, [daySelected]);
 
   function getFutureEvents() {
     let futureEvents = data.filter((event) => {
-      return dayjs().isAfter(dayjs(event.date)) === false;
+      return dayjs(event.date).get("month") === monthNumber;
     });
+  
     futureEvents = futureEvents.sort(function (a, b) {
       a = dayjs(a.date);
       b = dayjs(b.date);

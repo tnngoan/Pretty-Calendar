@@ -9,8 +9,8 @@ import GlobalContext from "./context/GlobalContext";
 
 function App() {
   const [currentMonth, setCurrentMonth] = useState(getMonth());
-  const { monthNumber } = useContext(GlobalContext);
-  
+  const { monthNumber, allEvents } = useContext(GlobalContext);
+
   useEffect(() => {
     setCurrentMonth(getMonth(monthNumber));
   }, [monthNumber]);
@@ -24,7 +24,7 @@ function App() {
       </div>
       <div className="flex flex-1 flex-col rounded-sm border border-gray-200">
         <NavigationBar />
-        <CalendarView month={currentMonth} />
+        <CalendarView month={currentMonth} events={allEvents} />
       </div>
     </div>
   );
