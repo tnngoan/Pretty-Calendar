@@ -48,15 +48,15 @@ export default function SidebarCalendar() {
     }
   }
   return (
-    <div className="p-4">
-      <header className="flex justify-between items-center pt-3">
+    <div className="px-5 pb-1 bg-white rounded-t-sm border border-gray-200">
+      <header className="flex justify-between items-center pt-7">
         <FontAwesomeIcon
           icon={faChevronLeft}
-          className="px-4 cursor-pointer"
+          className="px-4 cursor-pointer text-blue-900"
           onClick={prevMonth}
         />
         <div>
-          <p className="">
+          <p className="font-bold text-blue-900">
             {dayjs(new Date(dayjs().year(), currentMonthNumber)).format(
               "MMMM YYYY"
             )}
@@ -64,13 +64,13 @@ export default function SidebarCalendar() {
         </div>
         <FontAwesomeIcon
           icon={faChevronRight}
-          className="px-4 cursor-pointer"
+          className="px-4 cursor-pointer text-blue-900"
           onClick={nextMonth}
         />
       </header>
-      <div className="grid grid-cols-7 grid-rows-6 p-2">
+      <div className="grid grid-cols-7 grid-rows-6 items-stretch p-2">
         {currentMonth[0].map((day, i) => (
-          <span key={i} className="text-xs py-1 text-center">
+          <span key={i} className="text-xs pt-1 text-center">
             {day.format("dd").charAt(0)}
           </span>
         ))}
@@ -83,7 +83,7 @@ export default function SidebarCalendar() {
                   setDaySelected(day);
                 }}
                 key={id}
-                className={`py-2 my-1 w-full rounded-full ${dayOnSelect(day)}`}
+                className={`py-1 align-center w-8 rounded-full ${dayOnSelect(day)}`}
               >
                 <span className="text-xs">{day.format("D")}</span>
               </button>

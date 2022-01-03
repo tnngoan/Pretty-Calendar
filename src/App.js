@@ -16,12 +16,13 @@ function App() {
   }, [monthNumber]);
 
   return (
-    <div className="flex flex-1 h-screen overflow-y-hidden gap-3">
+    <div className="flex flex-1 h-screen overflow-y-hidden gap-2">
       <div className="flex flex-col relative overflow-y-scroll no-scrollbar w-80">
         <SidebarCalendar />
+        <hr />
         <SidebarEvents />
       </div>
-      <div className="flex flex-1 flex-col bg-blue-200">
+      <div className="flex flex-1 flex-col rounded-sm border border-gray-200">
         <NavigationBar />
         <CalendarView month={currentMonth} />
       </div>

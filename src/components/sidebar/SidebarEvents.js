@@ -36,9 +36,9 @@ function SidebarEvents() {
   };
 
   return (
-    <div className="px-4">
+    <div className="px-4 pt-4 bg-white border border-gray-200 border-t-0">
       <div className="flex align-baseline justify-between">
-        <h3 className="font-bold text-blue-800 text-xl">Upcoming Events</h3>
+        <h3 className="font-black text-blue-800 text-xl">Upcoming Events</h3>
         <button
           onClick={getAllEvents}
           className="py-2 px-4 text-xs text-gray-100 rounded-3xl bg-blue-700"
@@ -47,12 +47,13 @@ function SidebarEvents() {
         </button>
       </div>
       <div className="pb-4">
-        <p className="text-md">Today, 1 Jan</p>
+        <p className="text-md text-gray-400 font-semibold">
+          Today, {dayjs().format("D MMM")}
+        </p>
       </div>
       {events.map((event) => (
-        <EventCard key={event.id} title={event.name} date={event.date} />
+        <EventCard key={event.id} event={event} />
       ))}
-      {console.log(events)}
     </div>
   );
 }
