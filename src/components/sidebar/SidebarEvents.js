@@ -52,7 +52,11 @@ function SidebarEvents() {
         </p>
       </div>
       {events.map((event) => (
-        <EventCard key={event.id} event={event} />
+        <EventCard
+          key={event.id}
+          event={event}
+          img={"https://picsum.photos/200"}
+        />
       ))}
     </div>
   );
