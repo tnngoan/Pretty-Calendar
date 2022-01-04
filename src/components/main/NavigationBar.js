@@ -5,8 +5,13 @@ import {
   faChevronLeft,
   faChevronDown,
 } from "@fortawesome/free-solid-svg-icons";
+import { Menu, Dropdown, message } from "antd";
 import GlobalContext from "../../context/GlobalContext";
 import dayjs from "dayjs";
+
+const onClick = ({ key }) => {
+  message.info(`Click on ${key}`);
+};
 
 function NavigationBar() {
   const { monthNumber, setMonthNumber, setDaySelected } =
@@ -24,9 +29,23 @@ function NavigationBar() {
       : setMonthNumber(dayjs().month());
     setDaySelected(dayjs());
   }
-  function openModal(){
-    
-  }
+
+  const menu = (
+    <Menu onClick={onClick}>
+      <Menu.Item className="px-4" key="January">January</Menu.Item>
+      <Menu.Item key="February">February</Menu.Item>
+      <Menu.Item key="March">March</Menu.Item>
+      <Menu.Item key="April">April</Menu.Item>
+      <Menu.Item key="May">May</Menu.Item>
+      <Menu.Item key="June">June</Menu.Item>
+      <Menu.Item key="July">July</Menu.Item>
+      <Menu.Item key="August">August</Menu.Item>
+      <Menu.Item key="September">September</Menu.Item>
+      <Menu.Item key="October">October</Menu.Item>
+      <Menu.Item key="November">November</Menu.Item>
+      <Menu.Item key="December">December</Menu.Item>
+    </Menu>
+  );
   return (
     <div className="flex justify-between items-center h-20 px-6 py-4 bg-white rounded-t-sm border border-b-0">
       <div className="flex justify-around flex-shrink items-center text-blue-800">
@@ -50,15 +69,12 @@ function NavigationBar() {
           {dayjs(new Date(dayjs().year(), monthNumber)).format("MMMM YYYY")}
         </h2>
       </div>
-      <div>
-        <button
-          onClick={openModal}
-          className="bg-blue-700 p-2 px-4 rounded-xl text-gray-100"
-        >
+      <Dropdown overlay={menu}>
+        <a className="ant-dropdown-link" onClick={(e) => e.preventDefault()}>
           Month
           <FontAwesomeIcon icon={faChevronDown} className="px-2" />
-        </button>
-      </div>
+        </a>
+      </Dropdown>
     </div>
   );
 }

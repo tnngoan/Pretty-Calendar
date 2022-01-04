@@ -1,5 +1,6 @@
 import React, { useState, useContext, useEffect } from "react";
 import "./App.css";
+import "antd/dist/antd.css";
 import getMonth from "../src/utils/getMonth";
 import NavigationBar from "./components/main/NavigationBar";
 import CalendarView from "./components/main/CalendarView";
