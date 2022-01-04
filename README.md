@@ -7,7 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [x] User can click on the small calendar on the sidebar to see events on current day under "Upcoming Events" title.
 - [x] User can click see all to view all events within the current month.
 - [x] User can click on "View client profile" to go to a random website.
-- [] User can see list of events of each day in big view.
+- [x] User can see list of events of each day in big view.
 
 
 ## Rockets:
