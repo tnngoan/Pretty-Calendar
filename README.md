@@ -8,11 +8,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [x] User can click see all to view all events within the current month.
 - [x] User can click on "View client profile" to go to a random website.
 - [x] User can see list of events of each day in big view.
+- [x] User can see a list of months when clicking Month button from Navigation bar.
 
+## Future events:
 
-## Rockets:
-
-- [x] User can see a promt of creating an event by clicking on a specific day in big view.
+- [x] User can see a message when clicking on a specific day in big view.
 - [ ] User can add a title for their events.
 - [ ] User can choose the type of event they want to add (either a webinar or an appointment).
 - [ ] User can add an attended time for the event.
