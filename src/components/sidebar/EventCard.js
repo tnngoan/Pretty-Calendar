@@ -14,7 +14,7 @@ function EventCard(props) {
     if (event.name.length === 9) {
       return "bg-lightOrange border-l-darkBlue text-darkBlue";
     } else if (event.name.length > 9) {
-      return "bg-lightBlue border-l-darkOrange text-gray-100";
+      return "bg-lightBlue border-l-darkOrange text-white";
     } else {
       return "border-l-lightBlue bg-darkOrange text-darkBlue";
     }
@@ -53,7 +53,7 @@ function EventCard(props) {
             <div className="cursor-pointer rounded-full bg-blue-400 py-2 px-3 ml-2">
               <FontAwesomeIcon
                 icon={faVideo}
-                className="text-white"
+                // className="text-white"
                 onClick={handleClick}
               />
             </div>
@@ -66,9 +66,8 @@ function EventCard(props) {
                 className="w-full rounded-full"
               />
             </div>
-
             <p className="text-xs text-center align-center cursor-pointer tracking-wider underline">
-              <a href={event.link_to_meet}>View Client Profile</a>
+              <a className="text-gray-700" href={event.link_to_meet}>View Client Profile</a>
             </p>
           </div>
         </div>
