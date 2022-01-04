@@ -27,7 +27,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - [icons](https://fontawesome.com/)
 
-- [components](https://ant.design/)
+- [antDesign](https://ant.design)
 
 ## Available Scripts
 
