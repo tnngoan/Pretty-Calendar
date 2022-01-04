@@ -7,7 +7,7 @@ function EventCard(props) {
   const event = props.event;
 
   function handleClick() {
-    prompt("Connecting to Camera and Audio!");
+    message.info(`Starting video call...`);
   }
 
   function applyColor(str) {
