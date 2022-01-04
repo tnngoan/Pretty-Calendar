@@ -32,7 +32,9 @@ function NavigationBar() {
 
   const menu = (
     <Menu onClick={onClick}>
-      <Menu.Item className="px-4" key="January">January</Menu.Item>
+      <Menu.Item className="px-4" key="January">
+        January
+      </Menu.Item>
       <Menu.Item key="February">February</Menu.Item>
       <Menu.Item key="March">March</Menu.Item>
       <Menu.Item key="April">April</Menu.Item>
@@ -70,7 +72,11 @@ function NavigationBar() {
         </h2>
       </div>
       <Dropdown overlay={menu}>
-        <a className="ant-dropdown-link" onClick={(e) => e.preventDefault()}>
+        <a
+          href="#"
+          className="ant-dropdown-link"
+          onClick={(e) => e.preventDefault()}
+        >
           Month
           <FontAwesomeIcon icon={faChevronDown} className="px-2" />
         </a>
