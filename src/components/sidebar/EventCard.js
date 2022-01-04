@@ -2,7 +2,7 @@ import React from "react";
 import dayjs from "dayjs";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVideo } from "@fortawesome/free-solid-svg-icons";
-
+import { message } from "antd";
 function EventCard(props) {
   const event = props.event;
 
@@ -50,10 +50,10 @@ function EventCard(props) {
                 {dayjs(event.date).format("DD-MM-YYYY")}
               </p>
             </div>
-            <div className="rounded-full bg-blue-400 py-2 px-3 ml-2">
+            <div className="cursor-pointer rounded-full bg-blue-400 py-2 px-3 ml-2">
               <FontAwesomeIcon
                 icon={faVideo}
-                className="cursor-pointer text-white"
+                className="text-white"
                 onClick={handleClick}
               />
             </div>

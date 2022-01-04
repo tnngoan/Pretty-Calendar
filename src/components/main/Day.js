@@ -1,6 +1,7 @@
 import React, { useState, useContext, useEffect } from "react";
 import GlobalContext from "../../context/GlobalContext";
 import dayjs from "dayjs";
+import { message } from "antd";
 const formatForm = "DD-MM-YY";
 const data = require("../../api/data.json");
 
@@ -33,11 +34,11 @@ function Day({ day }) {
   }
 
   function addEvent() {
-    console.log("Feature coming!");
+    message.info(`Feature coming...`);
   }
 
   function handleClick() {
-    console.log("Feature coming!");
+    message.info(`Starting video call...`);
   }
 
   return (
@@ -60,7 +61,7 @@ function Day({ day }) {
             </p>
             <li className="text-xs list-none text-center">
               {events.map((event) => (
-                <ul onClick={handleClick} key={event.id}>
+                <ul onClick={addEvent} key={event.id}>
                   <p className="overflow-hidden truncate w-28 flex-1 bg-lightBlue py-1 px-1 rounded-sm cursor-pointer border border-gray-200 border-l-black">
                     {event.name}
                   </p>
