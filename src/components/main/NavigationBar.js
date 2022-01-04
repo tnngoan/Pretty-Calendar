@@ -67,19 +67,18 @@ function NavigationBar() {
           className="px-4 cursor-pointer"
           onClick={nextMonth}
         />
-          <h2 className="px-4 font-semibold text-2xl text-darkBlue">
-            {dayjs(new Date(dayjs().year(), monthNumber)).format("MMMM YYYY")}
-          </h2>
+        <h2 className="px-4 font-semibold text-2xl text-darkBlue">
+          {dayjs(new Date(dayjs().year(), monthNumber)).format("MMMM YYYY")}
+        </h2>
       </div>
       <Dropdown overlay={menu}>
-        <a
-          href="#"
-          className="ant-dropdown-link border border-lightBlue p-2 pl-4 rounded-xl bg-lightBlue text-gray-200 hover:text-white"
+        <p
+          className="cursor-pointer ant-dropdown-link border border-lightBlue p-2 pl-4 rounded-xl bg-lightBlue text-gray-200 hover:text-white"
           onClick={(e) => e.preventDefault()}
         >
           Month
           <FontAwesomeIcon icon={faChevronDown} className="px-2" />
-        </a>
+        </p>
       </Dropdown>
     </div>
   );
