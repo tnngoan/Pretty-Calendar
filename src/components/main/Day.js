@@ -61,7 +61,7 @@ function Day({ day }) {
             <li className="text-xs list-none text-center">
               {events.map((event) => (
                 <ul onClick={handleClick} key={event.id}>
-                  <p className="overflow-hidden truncate w-28 flex-1 bg-lightBlue mb-1 py-1 px-1 rounded-sm cursor-pointer border border-gray-200 border-l-black">
+                  <p className="overflow-hidden truncate w-28 flex-1 bg-lightBlue py-1 px-1 rounded-sm cursor-pointer border border-gray-200 border-l-black">
                     {event.name}
                   </p>
                 </ul>
