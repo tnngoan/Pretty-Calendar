@@ -1,6 +1,33 @@
-# Getting Started with Create React App
+# Pretty Calendar with React inspired from Google Calendar
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Features available in the project:
+
+- [x] User can click on the small calendar on the sidebar to see events on current day under "Upcoming Events" title.
+- [x] User can click see all to view all events within the current month.
+- [x] User can click on "View client profile" to go to a random website.
+- [x] User can see list of events of each day in big view.
+- [x] User can see a list of months when clicking Month button from Navigation bar.
+
+## Future events:
+
+- [x] User can see a message when clicking on a specific day in big view.
+- [ ] User can add a title for their events.
+- [ ] User can choose the type of event they want to add (either a webinar or an appointment).
+- [ ] User can add an attended time for the event.
+- [ ] User can add a link to online meeting with their appointments/webinar event.
+- [ ] User can invite another person via email.
+
+## Sources used in project:
+
+- [dayjs](https://www.npmjs.com/package/dayjs)
+
+- [data generator](https://www.mockaroo.com/)
+
+- [icons](https://fontawesome.com/)
+
+- [antDesign](https://ant.design)
 
 ## Available Scripts
 
